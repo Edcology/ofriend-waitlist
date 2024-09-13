@@ -9,18 +9,17 @@ const Home = () => {
     const [waitlistEmail, setWaitlistEmail] = useState("");
     const handleSubmit = (e) => {
       e.preventDefault();
-        alert(`You have successfully joined the waitlist`);
-        setWaitlistEmail("")
+      setWaitlistEmail("")
     }
   return (
     <>
       <div className='bg-hero-img flex flex-col sm:flex-row sm:justify-between sm:px-8 py-6 sm:py-0 sm:h-[550px]'>
-        <div className='px-6 lg:px-12 sm:px-0 md:px-10 lg:py-8 lg:w-[660px] w-[400px] grid sm:self-center gap-4 sm:gap-6'>
+        <div className='px-6 lg:px-12 sm:px-0 md:px-10 lg:py-8 lg:w-[660px] grid sm:self-center gap-4 sm:gap-6'>
             <h1 className='text-4xl lg:text-6xl md:text-5xl font-bold text-blue'>Why go solo when learning is better together ?</h1>
             <p className='font-blue mb-4'>Connecting with like-minded nerds has never been easier.Say hello to a new era of social studying.</p>
             <div>
                 <form onSubmit={handleSubmit}>
-                  <input type="email" value={waitlistEmail} onChange={(e) => setWaitlistEmail(e.target.value)} required className='outline outline-1 outline-black rounded-xl p-2 w-[220px] lg:w-[250px]' placeholder='Enter your email' />
+                  <input type="email" value={waitlistEmail} onChange={(e) => setWaitlistEmail(e.target.value)} required className='outline outline-1 outline-black rounded-xl p-2 w-[60%] lg:w-[250px]' placeholder='Enter your email' />
                   <input type="submit" value="Join waitlist!" className='bg-blue text-white ms-1 p-2 rounded-xl' />
                 </form>
             </div>

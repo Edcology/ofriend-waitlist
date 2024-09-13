@@ -8,7 +8,6 @@ const Footer = () => {
     const [subscribeEmail, setSubscribeEmail] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`You have successfully subscribed to update`);
         setSubscribeEmail("")
     }
   return (
@@ -23,7 +22,7 @@ const Footer = () => {
                 </form>
             </div>
         </div>
-        <div className='flex gap-10 justify-between mt-12 sm:mt-24 text-[10px] sm:text-[15px]'>
+        <div className='flex gap-4 justify-between mt-12 sm:mt-24 text-[10px] sm:text-[15px]'>
             <div>
                 <img src={ofriend} alt="" className='mb-6' />
                 <div className='flex gap-2 sm:gap-6'>
@@ -60,7 +59,7 @@ const Footer = () => {
         </div>
         <hr className='text-grey mt-4' />
         <div className='flex justify-between mt-8 align-middle'>
-            <p className='text-[14px] sm:text-[15px]'>Copyright 2024 Ofriend Inc.</p>
+            <p className='text-[13px] sm:text-[15px]'>Copyright 2024 Ofriend Inc.</p>
             <div className='flex gap-2 sm:gap-6 pb-4'>
                 <img src={linkedin} alt=""  className='w-[25px] sm:w-[40px]'/>
                 <img src={facebook} alt=""  className='w-[25px] sm:w-[40px]'/>
