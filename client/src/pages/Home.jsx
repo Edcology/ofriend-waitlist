@@ -24,9 +24,9 @@ const Home = () => {
                 </form>
             </div>
         </div>
-        <div className='px-12 lg:px-12 sm:px-0 mx-12 lg:mx-12 sm:mx-0 relative grid'>
+        <div className='px-12 lg:px-12 sm:px-0 mx-12 lg:mx-12 sm:mx-0 grid'>
             <img src={girlimg} alt="" className='h-[250px] lg:h-[500px] sm:h-[440px] md:h-[480px]' />
-            <img src={whatsapp} alt="" className='absolute -bottom-6 -right-[10px] sm:bottom-12 md:bottom-1 sm:right-[100px] sm:w-[120px] w-[90px] sm:-right-[20px] lg:right-[0]' />
+            <img src={whatsapp} alt="" className='fixed bottom-6 right-4 sm:bottom-12 sm:w-[120px] w-[90px]' />
         </div>
     </div>
     <h2 className='font-bold text-center text-3xl text-blue mt-10 sm:text-4xl'>Why choose us ?</h2>
