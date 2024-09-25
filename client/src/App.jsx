@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About';
 import Header from './components/Header'
@@ -12,14 +12,14 @@ import '@fontsource/poppins/700.css'; // Bold
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   )
 }
 export default App
