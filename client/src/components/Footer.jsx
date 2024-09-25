@@ -5,22 +5,22 @@ import facebook from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
 
 const Footer = () => {
-    const [subscribeEmail, setSubscribeEmail] = useState("");
-    const [subscribeName, setSubscribeName] = useState("");
+    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubscribeEmail("")
-        setSubscribeName("")
+        setEmail("")
+        setName("")
     }
   return (
-    <div className='p-6 pb-0 lg:p-12 lg:pb-0 lg:mb-0 lg:m-8 sm:m-4 sm:mb-0 lg:grid'>
+    <div id='footer' className='p-6 pb-0 lg:p-12 lg:pb-0 lg:mb-0 lg:m-8 sm:m-4 sm:mb-0 lg:grid'>
         <div className='bg-blue text-white p-6 lg:p-12 sm:p-8 rounded-xl sm:w-[600px] text-center lg:justify-self-center sm:text-center'>
             <h2 className='italic font-semibold text-[14px] sm:text-2xl mb-2 text-center'>Subscribe to get notified on new updates</h2>
             <p className='text-[12px] mb-6 text-center'>Stay in touch, so we can reach out to you with our lasted news and exclusive offers</p>
             <div className='mb-6 relative'>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" value={subscribeName} onChange={(e) => setSubscribeName(e.target.value)} required placeholder="Enter your Name" className='rounded-xl p-2 w-[220px] lg:w-[400px] sm:w-[300px] text-black mb-3' />
-                    <input type="email" value={subscribeEmail} onChange={(e) => setSubscribeEmail(e.target.value)} required placeholder="Enter your E-mail" className='rounded-xl p-2 w-[220px] lg:w-[400px] sm:w-[300px] text-black' />
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Enter your Name" className='rounded-xl p-2 w-[220px] lg:w-[400px] sm:w-[300px] text-black mb-3' />
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Enter your E-mail" className='rounded-xl p-2 w-[220px] lg:w-[400px] sm:w-[300px] text-black' />
                     <input type="submit" value="Subscribe" className='bg-lightblue p-2 rounded-xl absolute right-8 lg:right-12 sm:right-12 z-10' />
                 </form>
             </div>
