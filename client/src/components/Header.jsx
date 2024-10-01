@@ -20,7 +20,7 @@ const Header = () => {
           <NavLink to="/about" className={({isActive}) => `mx-5 ${isActive ? 'text-lightblue' : 'text-black'}`}>About us</NavLink>
           <NavLink to="/bootcamp" className={({isActive}) => `mx-5 ${isActive ? 'text-lightblue' : 'text-black'}`}>Bootcamp</NavLink>
         </div>
-        <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'} flex flex-col space-y-2 mt-4 absolute text-left right-0 bg-white top-9 p-6`}>
+        <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'} flex flex-col space-y-2 mt-4 absolute w-screen text-left right-0 bg-white top-9 p-6`}>
           <NavLink to="/" className={({isActive}) => `${isActive ? 'text-lightblue' : 'text-black'}`}>Home</NavLink>
           <NavLink to="/about" className={({isActive}) => `${isActive ? 'text-lightblue' : 'text-black'}`}>About us</NavLink>
           <NavLink to="/bootcamp" className={({isActive}) => `${isActive ? 'text-lightblue' : 'text-black'}`}>Bootcamp</NavLink>
