@@ -27,7 +27,7 @@ export default {
         "vlightgreen": "#E0F8E2",
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },
